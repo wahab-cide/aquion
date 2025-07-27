@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import { Button } from "./button";
 import { cn } from "@/lib/utils";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -163,8 +162,8 @@ export default function CTA() {
             Join the Water Revolution
           </h2>
           <p className="max-w-2xl text-sm md:text-base text-blue-100 text-center mx-auto my-4 md:my-6 lg:my-8 px-4">
-            Help us bring clean water to communities across Africa. Whether you're a researcher, 
-            engineer, or water advocate, there's a place for you in the Aquion mission.
+            Help us bring clean water to communities across Africa. Whether you&apos;re a researcher, 
+            engineer, or water advocate, there&apos;s a place for you in the Aquion mission.
           </p>
         </div>
         <BackgroundGrid className="mt-8 md:mt-16 lg:mt-36 z-0" />

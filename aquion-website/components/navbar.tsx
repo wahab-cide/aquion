@@ -9,7 +9,6 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
-import { Button } from "./button";
 import { AquionLogo } from "./aquion-logo";
 
 interface NavbarProps {

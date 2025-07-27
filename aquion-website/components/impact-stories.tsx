@@ -120,9 +120,9 @@ export function ImpactStories() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200">
                 <h4 className="text-xl font-bold text-gray-900 mb-4">Community Feedback</h4>
                 <blockquote className="text-gray-700 italic leading-relaxed mb-4">
-                  "Before the hydropanel, my daughters spent hours fetching water every morning. 
+                  &quot;Before the hydropanel, my daughters spent hours fetching water every morning. 
                   Now they go to school on time and have more time to study. This technology is 
-                  changing our future."
+                  changing our future.&quot;
                 </blockquote>
                 <p className="text-sm text-gray-600">
                   — Akosua M., Cape Coast resident
@@ -153,14 +153,3 @@ export function ImpactStories() {
   );
 }
 
-const LocationIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" 
-      stroke="#0066CC" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-    <circle cx="12" cy="10" r="3" stroke="#0066CC" strokeWidth="2"/>
-  </svg>
-);

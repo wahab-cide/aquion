@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export function HydropanelFeatures() {
   return (
@@ -307,68 +306,6 @@ const FeatureCard = ({
   );
 };
 
-const MetricItem = ({ 
-  label, 
-  value, 
-  description 
-}: { 
-  label: string; 
-  value: string; 
-  description: string; 
-}) => {
-  const getIconForLabel = (label: string) => {
-    if (label.includes('Water')) {
-      return (
-        <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C12 2 5 10 5 14a7 7 0 0 0 14 0c0-4-7-12-7-12z"/>
-        </svg>
-      );
-    }
-    if (label.includes('Power')) {
-      return (
-        <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-        </svg>
-      );
-    }
-    if (label.includes('Cost')) {
-      return (
-        <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
-        </svg>
-      );
-    }
-    if (label.includes('Lifetime')) {
-      return (
-        <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-      );
-    }
-    return (
-      <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-      </svg>
-    );
-  };
-
-  return (
-    <motion.div
-      whileHover={{ scale: 1.02 }}
-      className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
-    >
-      <div className="flex items-center gap-3 mb-3">
-        {getIconForLabel(label)}
-        <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">{label}</span>
-      </div>
-      <div className="mb-2">
-        <span className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">{value}</span>
-      </div>
-      <p className="text-sm text-gray-600 leading-relaxed">{description}</p>
-    </motion.div>
-  );
-};
-
 // Icon components
 const MoonIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -406,36 +343,3 @@ const WaterIcon = () => (
   </svg>
 );
 
-const LocalIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 12h20M2 12A10 10 0 0 1 12 2m-10 10a10 10 0 0 0 10 10m0-20a10 10 0 0 1 10 10m-10-10v20m0-20c-2.76 0-5 4.48-5 10s2.24 10 5 10m0-20c2.76 0 5 4.48 5 10s-2.24 10-5 10" 
-      stroke="currentColor" 
-      strokeWidth="2"
-      className="text-blue-600"
-    />
-  </svg>
-);
-
-const OpenSourceIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-      className="text-blue-600"
-    />
-  </svg>
-);
-
-const CommunityIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 10v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-      className="text-blue-600"
-    />
-  </svg>
-);
