@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    
+    /* Aquion Brand Colors */
+    --aquion-primary: #0066CC;
+    --aquion-primary-dark: #0052A3;
+    --aquion-secondary: #87CEEB;
+    --aquion-accent: #E6F3FF;
+    --aquion-text: #333333;
+    --aquion-text-light: #666666;
+    --aquion-bg: #FFFFFF;
+    --aquion-bg-secondary: #F8FBFF;
+    --aquion-border: #E0E7EF;
+    
+    /* Light theme variables */
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+    --primary: 211 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 203 69% 75%;
+    --secondary-foreground: 210 11% 15%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 11% 40%;
+    --accent: 206 100% 95%;
+    --accent-foreground: 210 11% 15%;
+    --border: 210 14% 89%;
+  }
+}
