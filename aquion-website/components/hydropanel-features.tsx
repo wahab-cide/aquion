@@ -74,26 +74,49 @@ export function HydropanelFeatures() {
               </h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <MetricItem 
-              label="Daily Water Output"
-              value="15-20L"
-              description="Per 1m² panel in optimal conditions"
-            />
-            <MetricItem 
-              label="Power Requirement"
-              value="10W"
-              description="Small PV panel for fan and pump only"
-            />
-            <MetricItem 
-              label="Unit Cost Target"
-              value="$130"
-              description="90% locally-sourced materials"
-            />
-            <MetricItem 
-              label="Operational Lifetime"
-              value="5+ years"
-              description="With minimal maintenance"
-            />
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div className="text-xs text-blue-600 font-semibold uppercase tracking-wide mb-1">Daily Water Output</div>
+                    <div className="text-2xl font-bold text-gray-900 mb-1">15-20L</div>
+                    <p className="text-sm text-gray-600">Per 1m² panel in optimal conditions</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div className="text-xs text-yellow-600 font-semibold uppercase tracking-wide mb-1">Power Requirement</div>
+                    <div className="text-2xl font-bold text-gray-900 mb-1">10W</div>
+                    <p className="text-sm text-gray-600">Small PV panel for fan and pump only</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div className="text-xs text-green-600 font-semibold uppercase tracking-wide mb-1">Unit Cost Target</div>
+                    <div className="text-2xl font-bold text-gray-900 mb-1">$130</div>
+                    <p className="text-sm text-gray-600">90% locally-sourced materials</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div className="text-xs text-purple-600 font-semibold uppercase tracking-wide mb-1">Operational Lifetime</div>
+                    <div className="text-2xl font-bold text-gray-900 mb-1">5+ years</div>
+                    <p className="text-sm text-gray-600">With minimal maintenance</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
