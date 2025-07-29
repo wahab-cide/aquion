@@ -107,14 +107,15 @@ export function PartnerOrganizations() {
                 <p className="text-gray-600 mb-6">
                   Whether you&apos;re a research institution, NGO, or government agency - let&apos;s work together to expand access to clean water
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg">
-                    Partner With Us
-                  </button>
-                  <button className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold border-2 border-blue-500 hover:bg-blue-50 transition-colors">
-                    Learn More
-                  </button>
-                </div>
+                <a 
+                  href="mailto:ac44@williams.edu" 
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                >
+                  Contact Us
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

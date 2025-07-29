@@ -236,23 +236,6 @@ export function HydropanelFeatures() {
           </motion.div>
             </div>
             
-            {/* Call to action */}
-            <div className="mt-12 text-center">
-              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-orange-200">
-                <h4 className="text-2xl font-bold text-gray-900 mb-4">Ready to Transform Communities?</h4>
-                <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-                  Join us in bringing sustainable water solutions to rural Africa through community-driven innovation.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-full font-semibold hover:from-orange-600 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Partner With Us
-                  </button>
-                  <button className="px-6 py-3 bg-white text-orange-600 rounded-full font-semibold border-2 border-orange-500 hover:bg-orange-50 transition-all duration-300">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

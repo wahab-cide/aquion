@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Balancer from "react-wrap-balancer";
-import Link from "next/link";
 
 export function Hero() {
   return (
@@ -37,19 +36,6 @@ export function Hero() {
         Solar-powered hydropanels delivering 15-20L of clean drinking water daily
         with zero grid dependency. Transforming humidity into hope for rural communities.
       </motion.p>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, delay: 0.7 }}
-        className="mb-8 mt-6 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
-      >
-        <Link
-          href="/#technology"
-          className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg w-full sm:w-auto justify-center"
-        >
-          Learn More
-        </Link>
-      </motion.div>
     </div>
   );
 }

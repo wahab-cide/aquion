@@ -130,22 +130,6 @@ export function ImpactStories() {
               </div>
             </div>
 
-            <div className="mt-12 text-center">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 max-w-3xl mx-auto">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Support Our Mission</h4>
-                <p className="text-gray-600 mb-6">
-                  Help us expand access to clean water across rural Africa through community-driven innovation
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-lg">
-                    Support the Project
-                  </button>
-                  <button className="inline-flex items-center gap-2 bg-white text-green-600 px-6 py-3 rounded-full font-semibold border-2 border-green-500 hover:bg-green-50 transition-colors">
-                    Read More Stories
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

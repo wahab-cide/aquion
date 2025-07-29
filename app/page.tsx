@@ -1,4 +1,3 @@
-import CTA from "@/components/cta";
 import { FrequentlyAskedQuestions } from "@/components/faq";
 import { HydropanelFeatures } from "@/components/hydropanel-features";
 import { Hero } from "@/components/hero";
@@ -15,7 +14,6 @@ export default function Home() {
       <TechSpecifications />
       <PartnerOrganizations />
       <FrequentlyAskedQuestions />
-      <CTA />
     </div>
   );
 }
